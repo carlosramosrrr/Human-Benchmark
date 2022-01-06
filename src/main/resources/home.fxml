@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="root" hgap="15.0" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: darkcyan;" vgap="15.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.backend.Home">
+    <HBox>
+        <!--<Button onAction="#reactionTimeClicked" text="Reaction Time" /> -->
+        <!--<Button onAction="#aimTrainerClicked" text="Aim Trainer" />
+        <Button onAction="#chimpTestClicked" text="Chimp Test" />
+        <Button onAction="#visualTestClicked" text="Visual Test" />
+        <Button onAction="#numberMemoryTestClicked" text="Number Test" />
+        <Button onAction="#verbalMemoryTestClicked" text="Verbal Memory Test" />
+        <Button onAction="#typingPageTestClicked" text="Typing Test" />
+        <Button onAction="#hearingPageTestClicked" text="Hearing Test" />-->
+    </HBox>
+   <VBox onMousePressed="#reactionTimeClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightcyan;" GridPane.rowIndex="1">
+      <children>
+         <Label text="Reaction Time">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Test your visual reflexes. " />
+      </children>
+   </VBox>
+    <VBox onMousePressed="#chimpTestClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightcyan;">
+        <children>
+            <Label text="Chimp Test">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+            <Label prefWidth="100.0" text="Are you smarter than a chimpanzee?" />
+        </children>
+    </VBox>
+    <VBox onMousePressed="#hearingPageTestClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightcyan;" GridPane.columnIndex="1">
+        <children>
+            <Label text="Hearing Test">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+            <Label text="Test your hearing." />
+        </children>
+    </VBox>
+    <VBox onMousePressed="#numberMemoryTestClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightcyan;" GridPane.columnIndex="2">
+        <children>
+            <Label text="Number Memory ">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+            <Label text="Remember the longest number you can." />
+        </children>
+    </VBox>
+    <VBox onMousePressed="#aimTrainerClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightcyan;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <children>
+            <Label text="Aim Trainer ">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+            <Label text="How quickly can you hit all the targets?" />
+        </children>
+    </VBox>
+    <VBox onMousePressed="#typingPageTestClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightcyan;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <children>
+            <Label text="Typing">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+            <Label text="How many words per minute can you type?" />
+        </children>
+    </VBox>
+    <VBox onMousePressed="#verbalMemoryTestClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightcyan;" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <children>
+            <Label text="Verbal Memory ">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+            <Label text="Keep as many words in short term memory as possible." />
+        </children>
+    </VBox>
+    <VBox onMousePressed="#visualTestClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightcyan;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <children>
+            <Label text="Visual Memory ">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+            <Label text="Remember an increasingly large board of squares." />
+        </children>
+    </VBox>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="183.5999755859375" minHeight="104.39999389648438" prefHeight="115.5999755859375" />
+      <RowConstraints maxHeight="164.80002136230468" minHeight="10.0" prefHeight="156.00003356933593" />
+      <RowConstraints maxHeight="191.19998168945312" minHeight="122.39997863769531" prefHeight="131.19996643066406" />
+   </rowConstraints>
+</GridPane>

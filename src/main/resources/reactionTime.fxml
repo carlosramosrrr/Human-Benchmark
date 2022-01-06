@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: darkcyan;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.backend.ReactionTime">
+
+    <VBox layoutX="150" layoutY="100" spacing="10.0">
+      <Label fx:id="titleMain" text="Reaction Time Test" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+        <Label fx:id="reactionTime" visible="false" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Button fx:id="start" onAction="#startTimer" style="-fx-background-color: yellow;" text="Click To Begin" />
+        <Button fx:id="finish" onAction="#finishTimer" style="-fx-background-color: yellow;" text="Click Me When Screen Turns Green" />
+        <Button fx:id="menuButton" onAction ="#goToMenu" style="-fx-background-color: yellow;" text="Menu" visible="true">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+    </VBox>
+</Pane>
